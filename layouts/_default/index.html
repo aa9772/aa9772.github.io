@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1>{{ .Site.Title }}</h1>
+
+{{/* mostra solo le pagine non di tipo "projects" */}}
+{{ range where .Pages "Type" "not in" (slice "projects") }}
+  {{ .Render "summary"}}
+{{ end }}
+{{ end }}
