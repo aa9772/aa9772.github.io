@@ -1,0 +1,10 @@
+baseURL = "https://TUOUSERNAME.github.io/"
+languageCode = "en-us"
+title = "Andrea Alessi"
+theme = "PaperMod"
+
+
+[params]
+author = "Andrea Alessi"
+showReadingTime = true
+showCodeCopyButtons = true
