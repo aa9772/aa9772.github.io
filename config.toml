@@ -1,6 +1,6 @@
-baseURL = "https://TUOUSERNAME.github.io/"
+baseURL = "https://researchflow.dev/"
 languageCode = "en-us"
-title = "Andrea Alessi"
+title = "ResearchFlow"
 theme = "PaperMod"
 
 
