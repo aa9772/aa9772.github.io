@@ -1,7 +1,7 @@
 baseURL = "https://researchflow.dev/"
 languageCode = "en-us"
 title = "ResearchFlow"
-theme = "PaperMod"
+theme = "PaperModX"
 
 
 [params]
