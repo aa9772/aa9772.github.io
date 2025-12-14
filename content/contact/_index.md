@@ -8,9 +8,6 @@ draft: false
 
 I am open to collaborations, discussions on research, and technical inquiries.
 
-### Email
-[andrea.alessi@engineer.com](mailto:andrea.alessi@engineer.com)
-
 ### GitHub
 [github.com/aa9772](https://github.com/aa9772)
 
