@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 date: 2025-12-13
+draft: false
 ---
 
 ## Get in Touch
