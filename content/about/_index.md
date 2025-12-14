@@ -12,3 +12,5 @@ Throughout my studies, I have explored a wide range of topics, including PLC pro
 Beyond the classroom, I have applied my knowledge as a PLC programmer, gaining hands-on experience in designing and implementing solutions for real-world industrial systems. This combination of rigorous academic training and practical experience has taught me to approach problems with both analytical precision and creative problem-solving.
 
 I see my academic path as more than a series of courses and projects; it is an ongoing exploration of technology, innovation, and the ways in which engineering can improve efficiency, intelligence, and adaptability in industrial systems. My goal is to continue contributing to this field, bridging the gap between research and practice, and always seeking new ways to learn, experiment, and grow.
+
+[CV](CV_ENG_20251214.pdf)
