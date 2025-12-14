@@ -8,14 +8,6 @@ theme = "PaperModX"
 author = "Andrea Alessi"
 showReadingTime = true
 showCodeCopyButtons = true
-# Aggiungi il CSS personalizzato
-customCSS = """
-/* Nasconde completamente gli anchor link dei titoli */
-a.anchor {
-    display: none !important;
-    visibility: hidden !important;
-}
-"""
 
 [menu]
   [[menu.main]]
@@ -34,10 +26,19 @@ a.anchor {
     weight = 3
 
   [[menu.main]]
+    name = "Observations"
+    url = "/observations/"
+    weight = 4
+    
+  [[menu.main]]
+    name = "Useful Contents"
+    url = "/usefulcontents/"
+    weight = 5
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 4
-
+    weight = 6
 
 [markup]
   [markup.goldmark]
