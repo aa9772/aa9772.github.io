@@ -1,0 +1,4 @@
+{{ $content := .Content }}
+{{ $content = replaceRE "<a href=\"#your-specific-link\">.*</a>" "" $content }}
+{{ $content = replaceRE "<a .*?>Specific Text</a>" "" $content }} // Removes links with text
+{{ .Content | safeHTML }} // Or use .Content directly if no changes
