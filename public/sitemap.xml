@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://researchflow.dev/projects/</loc>
     <lastmod>2025-12-13T04:35:41-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://researchflow.dev/</loc>
     <lastmod>2025-12-13T04:35:41-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://researchflow.dev/contact/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/embedded/</loc>
+    <loc>https://researchflow.dev/tags/embedded/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/real-time/</loc>
+    <loc>https://researchflow.dev/tags/real-time/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project-1/</loc>
+    <loc>https://researchflow.dev/projects/project-1/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scheduling/</loc>
+    <loc>https://researchflow.dev/tags/scheduling/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://researchflow.dev/tags/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://researchflow.dev/categories/</loc>
   </url>
 </urlset>
