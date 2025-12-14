@@ -8,6 +8,14 @@ theme = "PaperModX"
 author = "Andrea Alessi"
 showReadingTime = true
 showCodeCopyButtons = true
+# Aggiungi il CSS personalizzato
+customCSS = """
+/* Nasconde completamente gli anchor link dei titoli */
+a.anchor {
+    display: none !important;
+    visibility: hidden !important;
+}
+"""
 
 [menu]
   [[menu.main]]
