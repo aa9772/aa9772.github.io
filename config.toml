@@ -9,7 +9,11 @@ author = "Andrea Alessi"
 showReadingTime = true
 showCodeCopyButtons = true
 
+[params.profileMode]
+  enabled = false
+
 [menu]
+
   [[menu.main]]
     name = "About"
     url = "/about/"

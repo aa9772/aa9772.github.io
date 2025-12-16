@@ -1,8 +1,17 @@
 {{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
-{{/* mostra solo le pagine non di tipo "projects" */}}
-{{ range where .Pages "Type" "not in" (slice "projects") }}
-  {{ .Render "summary"}}
-{{ end }}
-{{ end }}
+<main>
+  <!-- Website Title-->
+  <h1>{{ .Site.Title }}</h1>
 
+  <!-- Contet of _index.md -->
+  {{ .Content }}
+
+  <!-- Opzionale: elenco di pagine non 'projects' o 'observation' -->
+  {{ range where .Pages "Type" "in" (slice "home") }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+</main>
+{{ end }}
