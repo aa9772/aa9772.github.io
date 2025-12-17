@@ -5,24 +5,40 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>404 Page not found | ResearchFlow</title>
+<title>Collaborations | ResearchFlow</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="Collaborations - ResearchFlow">
 <meta name="author" content="Andrea Alessi">
-<link rel="canonical" href="https://researchflow.dev/404.html">
+<link rel="canonical" href="https://researchflow.dev/collaborations/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://researchflow.dev/favicon.ico">
 <link rel="apple-touch-icon" href="https://researchflow.dev/apple-touch-icon.png">
-<link rel="alternate" hreflang="en" href="https://researchflow.dev/404.html">
+<link rel="alternate" type="application/json" href="https://researchflow.dev/collaborations/index.json">
+<link rel="alternate" hreflang="en" href="https://researchflow.dev/collaborations/">
 
-<meta name="twitter:title" content="404 Page not found | ResearchFlow" />
+<meta name="twitter:title" content="Collaborations | ResearchFlow" />
 <meta name="twitter:description" content="" />
-<meta property="og:title" content="404 Page not found | ResearchFlow" />
+<meta property="og:title" content="Collaborations | ResearchFlow" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://researchflow.dev/404.html" />
+<meta property="og:url" content="https://researchflow.dev/collaborations/" />
 
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Collaborations",
+      "item": "https://researchflow.dev/collaborations/"
+    }
+  ]
+}
+</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -62,7 +78,7 @@
 
 </head>
 
-<body class="list-page type-page kind-404 layout-" id="top"><script data-no-instant>
+<body class="list-page type-collaborations kind-section layout-list" id="top"><script data-no-instant>
 function switchTheme(theme) {
   switch (theme) {
     case 'light':
@@ -170,7 +186,7 @@ function toggleThemeListener() {
                 </a>
             </li>
             <li>
-                <a href="https://researchflow.dev/collaborations/" title="Collaborations"
+                <a href="https://researchflow.dev/collaborations/" title="Collaborations" class="active"
                 >Collaborations
                 </a>
             </li>
@@ -198,7 +214,51 @@ function toggleThemeListener() {
     </nav>
 </header>
 <main class="main">
-<div class="not-found">404</div>
+
+<h1>Collaborations</h1>
+
+<input id="search"
+       type="text"
+       placeholder="Search collaborations..."
+       style="width:100%;padding:8px;margin-bottom:1rem;">
+
+<div id="collaborations"></div>
+
+<script>
+fetch('/collaborations/index.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('collaborations');
+    const search = document.getElementById('search');
+
+    function render(items) {
+      container.innerHTML = '';
+      items.forEach(p => {
+        container.innerHTML += `
+          <a href="${p.url}" style="display:block; margin-bottom:20px; text-decoration:none; color:inherit;">
+  	    <h3>${p.title}</h3>
+ 	    <p>${p.summary || ''}</p>
+  	    <small>${(p.tags || []).join(', ')}</small>
+	</a>
+
+        `;
+      });
+    }
+
+    render(data);
+
+    search.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      render(data.filter(p =>
+        p.title.toLowerCase().includes(q) ||
+        (p.summary || '').toLowerCase().includes(q)
+      ));
+    });
+  });
+</script>
+
+
+
     </main>
     
 <footer class="footer">
