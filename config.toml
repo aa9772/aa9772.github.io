@@ -5,9 +5,10 @@ theme = "PaperModX"
 
 
 [params]
-author = "Andrea Alessi"
-showReadingTime = true
-showCodeCopyButtons = true
+  author = "Andrea Alessi"
+  showReadingTime = true
+  showCodeCopyButtons = true
+  custom_css = ["css/custom.css"]
 
 [params.profileMode]
   enabled = false

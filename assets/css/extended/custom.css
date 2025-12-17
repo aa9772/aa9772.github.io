@@ -1,0 +1,53 @@
+:root {
+    /* 1. Alza il limite massimo globale del sito */
+    --main-width: 1300px; 
+    
+    /* 2. Alza il limite specifico dei post */
+    --post-width: 1200px; 
+}
+
+.menu a {
+    font-size: 50px !important; /* Dimensione dei link */
+    font-weight: 500;           /* Opzionale: spessore del font */
+}
+
+.nav {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    /* Puoi anche regolare la larghezza massima del menu per allinearlo al post */
+    max-width: var(--main-width); 
+    margin: 0 auto;
+}
+
+
+/* Ingrandisce i link anche se non sono dentro una lista (variante PaperModX) */
+header.header .menu a span {
+    font-size: 50px !important;
+}
+
+/* Per cambiare tutto il corpo del testo */
+body {
+    font-size: 25px;
+}
+
+/* Per cambiare solo i paragrafi nel contenuto Markdown */
+.article-style p {
+    font-size: 50px;
+}
+
+
+/* Forza margini interni e font del testo */
+body .post-content {
+    font-size: 25px !important; /* Dimensione Font */
+    padding-left: 0px !important;  /* Margine sinistro interno */
+    padding-right: 0px !important; /* Margine destro interno */
+    line-height: 1.6 !important;
+
+}
+
+
+/* 3. Se vuoi che i margini siano uguali a quelli del titolo (allineati) */
+.post-single {
+    padding-left:  0px !important;
+    padding-right: 0px !important;
+}

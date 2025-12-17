@@ -1,0 +1,13 @@
+body {
+    font-size: 20px;       /* dimensione del testo principale */
+    line-height: 1.6;      /* migliora leggibilità */
+    font-family: Arial, sans-serif; /* o qualsiasi font tu scelga */
+}
+
+
+/* --- Margini e padding dei contenitori principali --- */
+main, .content, .post, .container {
+    margin: 40px auto;        /* margine verticale e centratura */
+    padding: 20px;            /* spazio interno */
+    max-width: 1000px;        /* larghezza massima leggibile */
+}

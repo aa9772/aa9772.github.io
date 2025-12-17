@@ -6,12 +6,11 @@
   <!-- Contet of _index.md -->
   {{ .Content }}
 
-  <!-- Opzionale: elenco di pagine non 'projects' o 'observation' -->
   {{ range where .Pages "Type" "in" (slice "home") }}
     <article>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p>{{ .Summary }}</p>
     </article>
   {{ end }}
-</main>
+  </main>
 {{ end }}

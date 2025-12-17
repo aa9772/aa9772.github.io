@@ -2,7 +2,7 @@
 title: "Engineering between study, industry, and curiosity"
 date: 2025-12-15
 type: "home"
-draft: false
+draft: true
 ---
 
 &nbsp;

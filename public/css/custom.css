@@ -1,0 +1,6 @@
+/* --- Contenuto dei post PaperModX --- */
+.content p{
+    padding: 0.5rem !important;       /* padding interno minimo */
+    margin: 0.5rem auto !important;   /* margini quasi scomparsi */
+    max-width: 1000px !important;
+}
