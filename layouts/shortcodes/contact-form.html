@@ -1,16 +1,93 @@
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xdkqbwkq"
-  method="POST"
-  enctype="multipart/form-data"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label><br>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label><br>
-  <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      padding: 40px;
+    }
+
+    .contact-form {
+      max-width: 600px; /* form più grande */
+      margin: 0;
+      background: #ffffff;
+      padding: 48px 40px;
+      max-width: 900px;
+      max-height: 900px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 14px; /* campi più grandi */
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 22px; /* testo più leggibile */
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+      height: 200px; /* area messaggio grande */
+      resize: none;  /* dimensione fissa */
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #4f46e5;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #4338ca;
+    }
+
+    .contact-form button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/xdkqbwkq"
+    method="POST"
+  >
+    <label for="email">Your email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="message">Your message</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send message</button>
+  </form>
+
+</body>
+</html>
