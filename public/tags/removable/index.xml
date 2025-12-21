@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Removable on ResearchFlow</title>
+    <title>ReMovAble on Exploring Science and Engineering Solutions | Andrea Alessi</title>
     <link>http://localhost:1313/tags/removable/</link>
-    <description>Recent content in Removable on ResearchFlow</description>
+    <description>Recent content in ReMovAble on Exploring Science and Engineering Solutions | Andrea Alessi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Dec 2025 04:35:41 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/removable/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Dec 2025 04:35:41 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/removable/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ReMovAble</title>
-      <link>http://localhost:1313/collaborations/se_bowdencable/</link>
-      <pubDate>Wed, 17 Dec 2025 04:35:41 -0500</pubDate>
+      <link>http://localhost:1313/collaborations/removable-1/</link>
+      <pubDate>Sun, 21 Dec 2025 04:35:41 -0500</pubDate>
       
-      <guid>http://localhost:1313/collaborations/se_bowdencable/</guid>
-      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
-&lt;p&gt;In partnership with Montecatone Clinic, the &lt;strong&gt;ReMovAble Project&lt;/strong&gt; aims to support people with spinal cord injuries. We are developing an innovative glove designed to restore hand mobility and improve the everyday lives of quadriplegic patients.&lt;/p&gt;
-&lt;p&gt;More than just a technological innovation, this project is about people. A passionate team of students and researchers drives ReMovAble, motivated by volunteerism and collaboration. Their dedication shows how engineering can change lives and the real impact that collective research can have on society.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/collaborations/removable-1/</guid>
+      <description>Overview of the ReMovAble Project, a multidisciplinary initiative developing an assistive glove for spinal cord injury patients, highlighting technical challenges and contributions by the project team.</description>
       <content:encoded><![CDATA[<h2 id="the-project">The Project</h2>
 <p>In partnership with Montecatone Clinic, the <strong>ReMovAble Project</strong> aims to support people with spinal cord injuries. We are developing an innovative glove designed to restore hand mobility and improve the everyday lives of quadriplegic patients.</p>
 <p>More than just a technological innovation, this project is about people. A passionate team of students and researchers drives ReMovAble, motivated by volunteerism and collaboration. Their dedication shows how engineering can change lives and the real impact that collective research can have on society.</p>
@@ -42,6 +40,30 @@
 <p>To overcome this, a dedicated <strong>electronic circuit</strong> was developed and iteratively refined. Multiple designs were tested to find the optimal balance between <strong>sensitivity and stability</strong>, ensuring that even the tiniest variations in resistance could be detected <strong>consistently and accurately</strong>.</p>
 <p>But capturing the data was only half the challenge. The raw resistance readings had to be <strong>interpreted and translated into actionable commands</strong> for the actuators. This required careful <strong>signal processing, calibration, and continuous testing</strong>, tuning the system so that every detected variation corresponded precisely to the intended hand movement.</p>
 <p>Through this iterative process, a <strong>robust sensing-actuation interface</strong> emerged, capable of delivering <strong>smooth, reliable, and safe responses</strong> to user input. This work not only solved a complex technical problem but also laid the foundation for a glove that can become a <strong>functional assistive device</strong>, capable of improving the daily lives of quadriplegic patients.</p>
+<h2 id="authorship-contributions-and-acknowledgements">Authorship, Contributions, and Acknowledgements</h2>
+<p>The <strong>ReMovAble Project</strong> is a multidisciplinary initiative focused on developing an assistive wearable device to support hand mobility in individuals with spinal cord injuries. The work described in this article reflects the collaborative efforts of students, researchers, each contributing complementary expertise.</p>
+<h3 id="authors-and-individual-contributions">Authors and Individual Contributions</h3>
+<ul>
+<li>
+<p><a href="https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/"><strong>Gregorio Pisaeschi</strong></a></p>
+<p>Affiliation (AMD (Advanced Materials and Design Lab), DEI &ldquo;Guglielmo Marconi&rdquo;, University of Bologna)</p>
+</li>
+</ul>
+<p>Contribution details to be provided by the author.</p>
+<ul>
+<li>
+<p><a href="https://www.linkedin.com/in/carlo-gotti-225779184/"><strong>Carlo Gotti</strong></a></p>
+<p>Affiliation (AMD (Advanced Materials and Design Lab), DEI &ldquo;Guglielmo Marconi&rdquo;, University of Bologna)</p>
+</li>
+</ul>
+<p>Contribution details to be provided by the author.</p>
+<h3 id="research-environment-and-laboratory-context">Research Environment and Laboratory Context</h3>
+<p>The project has been developed within the <strong>Advanced Materials and Design Lab</strong>, part of the <strong>University of Bologna</strong>. The laboratory provided the scientific environment, technical resources, and research guidance necessary for the development of the prototype and associated experimental activities.</p>
+<p>The interdisciplinary setting, combining expertise in <strong>biomedical engineering, electronics, control systems, and human-centered design</strong>, fosters a research-driven approach to assistive technology development.</p>
+<p>Further information about the laboratory and its ongoing research activities is available at:<br>
+<a href="https://www.linkedin.com/in/amd-university-of-bologna-413948280/"><strong>AMD</strong></a></p>
+<hr>
+<p><em>Editorial Note:</em> The technical development and iterative refinement of the sensing–actuation interface described in the Contribution section was carried out by the site curator.</p>
 ]]></content:encoded>
     </item>
     

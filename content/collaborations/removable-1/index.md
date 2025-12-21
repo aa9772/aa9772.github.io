@@ -1,8 +1,9 @@
 ---
 title: "ReMovAble"
 type: "collaborations"
-date: 2025-12-17T04:35:41-05:00
-tags: [removable, amd, unibo]
+date: 2025-12-21T04:35:41-05:00
+tags: [ReMovAble, AMD, unibo, SMA]
+summary: "Overview of the ReMovAble Project, a multidisciplinary initiative developing an assistive glove for spinal cord injury patients, highlighting technical challenges and contributions by the project team."
 draft: true
 ---
 
@@ -37,3 +38,33 @@ But capturing the data was only half the challenge. The raw resistance readings 
 
 Through this iterative process, a **robust sensing-actuation interface** emerged, capable of delivering **smooth, reliable, and safe responses** to user input. This work not only solved a complex technical problem but also laid the foundation for a glove that can become a **functional assistive device**, capable of improving the daily lives of quadriplegic patients.
 
+## Authorship, Contributions, and Acknowledgements
+
+The **ReMovAble Project** is a multidisciplinary initiative focused on developing an assistive wearable device to support hand mobility in individuals with spinal cord injuries. The work described in this article reflects the collaborative efforts of students, researchers, each contributing complementary expertise.
+
+### Authors and Individual Contributions
+
+- [**Gregorio Pisaeschi**](https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/)
+
+  Affiliation (AMD (Advanced Materials and Design Lab), DEI "Guglielmo Marconi", University of Bologna)  
+
+Contribution details to be provided by the author.
+
+- [**Carlo Gotti**](https://www.linkedin.com/in/carlo-gotti-225779184/)
+
+  Affiliation (AMD (Advanced Materials and Design Lab), DEI "Guglielmo Marconi", University of Bologna)  
+
+Contribution details to be provided by the author.
+
+### Research Environment and Laboratory Context
+
+The project has been developed within the **Advanced Materials and Design Lab**, part of the **University of Bologna**. The laboratory provided the scientific environment, technical resources, and research guidance necessary for the development of the prototype and associated experimental activities.
+
+The interdisciplinary setting, combining expertise in **biomedical engineering, electronics, control systems, and human-centered design**, fosters a research-driven approach to assistive technology development.
+
+Further information about the laboratory and its ongoing research activities is available at:  
+[**AMD**](https://www.linkedin.com/in/amd-university-of-bologna-413948280/)
+
+---
+
+*Editorial Note:* The technical development and iterative refinement of the sensing–actuation interface described in the Contribution section was carried out by the site curator.
