@@ -14,6 +14,9 @@ I am open to collaborations, discussions on research, and technical inquiries.
 ### LinkedIn
 [Andrea Alessi](https://www.linkedin.com/in/andrea-alessi-4b2aa2b3/)
 
+### ORCID
+[https://orcid.org/0009-0009-4376-6640](https://orcid.org/0009-0009-4376-6640)
+
 ---
 
 ### Send a Message

@@ -13,4 +13,4 @@ Beyond the classroom, I have applied my knowledge as a PLC programmer, gaining h
 
 I see my academic path as more than a series of courses and projects; it is an ongoing exploration of technology, innovation, and the ways in which engineering can improve efficiency, intelligence, and adaptability in industrial systems. My goal is to continue contributing to this field, bridging the gap between research and practice, and always seeking new ways to learn, experiment, and grow.
 
-[CV](CV_ENG_20251214.pdf)
+[Curriculum Vitae](CV_EN_20260101.pdf)
