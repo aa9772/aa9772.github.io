@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Exploring Science and Engineering Solutions | Andrea Alessi</title>
+    <link>https://andreaalessi.com/tags/python/</link>
+    <description>Recent content in Python on Exploring Science and Engineering Solutions | Andrea Alessi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Jan 2026 04:35:41 -0500</lastBuildDate><atom:link href="https://andreaalessi.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-Piston Simulator</title>
+      <link>https://andreaalessi.com/projects/piston-sim/</link>
+      <pubDate>Sat, 03 Jan 2026 04:35:41 -0500</pubDate>
+      
+      <guid>https://andreaalessi.com/projects/piston-sim/</guid>
+      <description>Modular multi‑piston simulator in Python with Excel configuration, real‑time Matplotlib visualization, and Modbus TCP interface for control and sensor simulation.</description>
+      <content:encoded><![CDATA[<h1 id="multi-piston-simulator-python">Multi-Piston Simulator (Python)</h1>
+<h2 id="overview">Overview</h2>
+<p>The <strong>Multi-Piston Simulator</strong> is a modular Python project designed to <strong>simulate industrial piston systems</strong> with realistic control, sensors, and fault behavior. It is aimed at engineers, researchers, and students who want to <strong>understand, test, or demonstrate automation concepts</strong> without physical hardware.</p>
+<p>This simulator is particularly useful for:</p>
+<ul>
+<li><strong>Education</strong>: visualizing the dynamics of pistons, sensors, and commands in real time.</li>
+<li><strong>Research &amp; Development</strong>: testing PLC logic, Modbus communication, or control algorithms.</li>
+<li><strong>Prototyping</strong>: quickly iterating piston configurations before moving to real hardware.</li>
+</ul>
+<hr>
+<h2 id="why-use-this-simulator">Why Use This Simulator</h2>
+<ul>
+<li><strong>Safe and fast experimentation</strong>: test different piston configurations, command strategies, and faults without risk or cost.</li>
+<li><strong>Fully configurable via Excel</strong>: change number of pistons, strokes, sensors, and control modes in seconds.</li>
+<li><strong>Visual feedback</strong>: intuitive visualization of pistons, rods, sensors, and commands.</li>
+<li><strong>Modular and extendable</strong>: easy to integrate PLC logic, Modbus interfaces, or new simulation features.</li>
+<li><strong>Consistency across simulations</strong>: all pistons share the same scaling and behavior, making comparisons reliable.</li>
+<li><strong>Fault simulation included</strong>: block pistons to test emergency response, logic handling, or PLC reaction.</li>
+</ul>
+<p>This makes it ideal for anyone looking to <strong>learn automation, validate control logic, or showcase industrial simulation skills</strong>.</p>
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li>Multi-piston simulation with independent movement.</li>
+<li>Extend and retract commands with single or double command modes.</li>
+<li>Endstop sensors with color indicators (green = active, red = inactive).</li>
+<li>Fault simulation (blocking pistons).</li>
+<li>Labels for each piston, fully configurable via Excel.</li>
+<li>Real-time animation using Matplotlib.</li>
+<li>Optional Modbus TCP interface for external control and monitoring.</li>
+</ul>
+<hr>
+<h2 id="visualization--interaction">Visualization &amp; Interaction</h2>
+<p>The simulator provides clear visual feedback for each piston:</p>
+<ul>
+<li><strong>Cylinder and rod</strong>: motion accurately reflects stroke configuration.</li>
+<li><strong>Piston head</strong>: moves with rod to show current position.</li>
+<li><strong>Endstop sensors</strong>: indicate whether pistons are fully retracted or extended.</li>
+<li><strong>Command indicators</strong>: show which commands are active in real time.</li>
+<li><strong>Fault indicators</strong>: simulate blocked pistons for testing emergency response.</li>
+</ul>
+<p>This makes it possible to <strong>observe control logic and physical response simultaneously</strong>, bridging the gap between theory and practice.</p>
+<hr>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Python 3.8+</li>
+<li>Libraries: <code>pandas</code>, <code>matplotlib</code>, <code>openpyxl</code>, <code>pyModbusTCP</code> (if using Modbus)</li>
+<li>Excel for configuration</li>
+</ul>
+<p>Install dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pandas matplotlib openpyxl pyModbusTCP
+</span></span></code></pre></div><hr>
+<h2 id="running-the-simulator">Running the Simulator</h2>
+<p>Clone the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/aa9772/piston-sim.git
+</span></span><span style="display:flex;"><span>cd piston-sim
+</span></span></code></pre></div><p>Run the simulator with the default configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m piston_sim.main
+</span></span></code></pre></div><p>Or specify a custom Excel file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m piston_sim.main path_to_your_excel.xlsx
+</span></span></code></pre></div><hr>
+<h2 id="excel-configuration">Excel Configuration</h2>
+<p>Pistons are fully configurable via Excel. Configure:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ID</td>
+          <td>Piston identifier</td>
+      </tr>
+      <tr>
+          <td>Label</td>
+          <td>Displayed label above piston</td>
+      </tr>
+      <tr>
+          <td>Stroke</td>
+          <td>Maximum piston extension</td>
+      </tr>
+      <tr>
+          <td>Sensor Retract</td>
+          <td>&lsquo;Yes&rsquo; or &lsquo;No&rsquo;</td>
+      </tr>
+      <tr>
+          <td>Sensor Extend</td>
+          <td>&lsquo;Yes&rsquo; or &lsquo;No&rsquo;</td>
+      </tr>
+      <tr>
+          <td>Single/Double Command</td>
+          <td>&lsquo;Single&rsquo; or &lsquo;Double&rsquo; command mode</td>
+      </tr>
+      <tr>
+          <td>Speed</td>
+          <td>Optional, piston movement speed</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="why-excel">Why Excel?</h2>
+<ul>
+<li>Non-technical users can change piston setup without editing code.</li>
+<li>Quick experimentation with different numbers of pistons or stroke lengths.</li>
+<li>Easily integrates with PLC and Modbus simulation logic.</li>
+</ul>
+<hr>
+<h2 id="github-repository">GitHub Repository</h2>
+<p>Full source code, releases, and updates are available on GitHub:</p>
+<p><a href="https://github.com/aa9772/piston-sim">https://github.com/aa9772/piston-sim</a></p>
+<hr>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

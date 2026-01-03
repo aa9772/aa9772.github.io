@@ -1,1 +1,6 @@
-[]
+[{
+    "title": "Multi-Piston Simulator",
+    "summary": "Modular multi‑piston simulator in Python with Excel configuration, real‑time Matplotlib visualization, and Modbus TCP interface for control and sensor simulation.",
+    "tags": ["python","piston simulator","industrial automation","plc","modbus","real-time visualization","simulation","engineering","educational"],
+    "url": "/projects/piston-sim/"
+  }]

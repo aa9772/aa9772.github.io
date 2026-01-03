@@ -51,3 +51,27 @@ body .post-content {
     padding-left:  0px !important;
     padding-right: 0px !important;
 }
+
+/* Code block visibility fix */
+pre {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none !important;
+  color: inherit !important;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+}
+
+/* Inline code */
+code {
+  background-color: #2a2a2a;
+  color: #ffcc66;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
