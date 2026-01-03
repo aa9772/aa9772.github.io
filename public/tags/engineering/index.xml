@@ -14,7 +14,20 @@
       
       <guid>https://andreaalessi.com/projects/piston-sim/</guid>
       <description>Modular multi‑piston simulator in Python with Excel configuration, real‑time Matplotlib visualization, and Modbus TCP interface for control and sensor simulation.</description>
-      <content:encoded><![CDATA[<h1 id="multi-piston-simulator-python">Multi-Piston Simulator (Python)</h1>
+      <content:encoded><![CDATA[<h2 id="index">Index</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#why-use-this-simulator">Why Use This Simulator</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#visualization--interaction">Visualization &amp; Interaction</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#running-the-simulator">Running the Simulator</a></li>
+<li><a href="#excel-configuration">Excel Configuration</a></li>
+<li><a href="#why-excel">Why Excel?</a></li>
+<li><a href="#github-repository">GitHub Repository</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#example-two-pistons-configuration">Example: Two Pistons Configuration</a></li>
+</ul>
 <h2 id="overview">Overview</h2>
 <p>The <strong>Multi-Piston Simulator</strong> is a modular Python project designed to <strong>simulate industrial piston systems</strong> with realistic control, sensors, and fault behavior. It is aimed at engineers, researchers, and students who want to <strong>understand, test, or demonstrate automation concepts</strong> without physical hardware.</p>
 <p>This simulator is particularly useful for:</p>
@@ -130,6 +143,60 @@
 <hr>
 <h2 id="license">License</h2>
 <p>This project is licensed under the MIT License.</p>
+<hr>
+<h2 id="example-two-pistons-configuration">Example: Two Pistons Configuration</h2>
+<p>We will simulate <strong>two pistons</strong> with different setups:</p>
+<h3 id="piston-configurations">Piston Configurations</h3>
+<ol>
+<li>
+<p><strong>Piston A</strong></p>
+<ul>
+<li>Double Command</li>
+<li>Both sensors are present</li>
+<li><em>This piston can extend and retract independently, with full sensor feedback.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Piston B</strong></p>
+<ul>
+<li>Single Command</li>
+<li>Only the extended sensor is present</li>
+<li><em>This piston only detects the extended position, limiting control options.</em></li>
+</ul>
+</li>
+</ol>
+<p>You can see the Excel configuration file here:<br>
+<a href="pistons_config.xlsx">Download Piston Configuration</a><br>
+<em>This file contains the setup parameters for each piston, including command type and sensor presence.</em></p>
+<p><strong>Output of the configuration:</strong><br>
+<img loading="lazy" src="/projects/piston-sim/Figure_1.png" type="" alt="Output Config"  /><br>
+<em>Diagram showing how the pistons are configured according to the Excel file.</em></p>
+<hr>
+<h3 id="modbus-master-setup">Modbus Master Setup</h3>
+<p>We use <strong>ModbusTools</strong> as the Modbus Master:<br>
+<a href="https://github.com/serhmarch/ModbusTools/">ModbusTools</a><br>
+<em>This software simulates a Modbus client to control the pistons.</em></p>
+<p><strong>Client configuration file:</strong><br>
+<a href="2PistonsModubsMaster">Download Client Configuration</a><br>
+<em>Contains the mapping of Modbus addresses and commands for each piston.</em></p>
+<p><strong>Client GUI Screenshot:</strong><br>
+<img loading="lazy" src="/projects/piston-sim/Screenshot_1.png" type="" alt="Screenshot 1"  /><br>
+<em>Shows the Modbus client interface with pistons listed and ready to be controlled.</em></p>
+<hr>
+<h3 id="execution-example-piston-a-extension">Execution Example: Piston A Extension</h3>
+<p><img loading="lazy" src="/projects/piston-sim/Screenshot_2.png" type="" alt="Screenshot 2"  /><br>
+<em>This screenshot shows Piston A extending under Modbus command, verifying that sensors respond correctly.</em></p>
+<p><strong>Result:</strong><br>
+<img loading="lazy" src="/projects/piston-sim/Figure_2.png" type="" alt="Result 1"  /><br>
+<em>Graphical output of Piston A’s motion and sensor feedback over time.</em></p>
+<hr>
+<h3 id="fault-simulation">Fault Simulation</h3>
+<p><strong>Modbus Fault Simulation:</strong><br>
+<img loading="lazy" src="/projects/piston-sim/Screenshot_3.png" type="" alt="Screenshot 3"  /><br>
+<em>Demonstrates a simulated Modbus fault during piston operation.</em></p>
+<p><strong>Fault Result:</strong><br>
+<img loading="lazy" src="/projects/piston-sim/Figure_3.png" type="" alt="Result 2"  /><br>
+<em>Shows how the system reacts to the fault, including sensor and command status.</em></p>
 ]]></content:encoded>
     </item>
     

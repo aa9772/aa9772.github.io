@@ -7,7 +7,19 @@ summary: "Modular multi‑piston simulator in Python with Excel configuration, r
 draft: false
 ---
 
-# Multi-Piston Simulator (Python)
+## Index
+- [Overview](#overview)
+- [Why Use This Simulator](#why-use-this-simulator)
+- [Features](#features)
+- [Visualization & Interaction](#visualization--interaction)
+- [Getting Started](#getting-started)
+- [Running the Simulator](#running-the-simulator)
+- [Excel Configuration](#excel-configuration)
+- [Why Excel?](#why-excel)
+- [GitHub Repository](#github-repository)
+- [License](#license)
+- [Example: Two Pistons Configuration](#example-two-pistons-configuration)
+
 
 ## Overview
 
@@ -135,3 +147,68 @@ Full source code, releases, and updates are available on GitHub:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Example: Two Pistons Configuration
+
+We will simulate **two pistons** with different setups:
+
+### Piston Configurations
+
+1. **Piston A**  
+   - Double Command  
+   - Both sensors are present  
+   - *This piston can extend and retract independently, with full sensor feedback.*
+
+2. **Piston B**  
+   - Single Command  
+   - Only the extended sensor is present  
+   - *This piston only detects the extended position, limiting control options.*
+
+You can see the Excel configuration file here:  
+[Download Piston Configuration](pistons_config.xlsx)  
+*This file contains the setup parameters for each piston, including command type and sensor presence.*
+
+**Output of the configuration:**  
+![Output Config](Figure_1.png)  
+*Diagram showing how the pistons are configured according to the Excel file.*
+
+---
+
+### Modbus Master Setup
+
+We use **ModbusTools** as the Modbus Master:  
+[ModbusTools](https://github.com/serhmarch/ModbusTools/)  
+*This software simulates a Modbus client to control the pistons.*
+
+**Client configuration file:**  
+[Download Client Configuration](2PistonsModubsMaster)  
+*Contains the mapping of Modbus addresses and commands for each piston.*
+
+**Client GUI Screenshot:**  
+![Screenshot 1](Screenshot_1.png)  
+*Shows the Modbus client interface with pistons listed and ready to be controlled.*
+
+---
+
+### Execution Example: Piston A Extension
+
+![Screenshot 2](Screenshot_2.png)  
+*This screenshot shows Piston A extending under Modbus command, verifying that sensors respond correctly.*
+
+**Result:**  
+![Result 1](Figure_2.png)  
+*Graphical output of Piston A’s motion and sensor feedback over time.*
+
+---
+
+### Fault Simulation
+
+**Modbus Fault Simulation:**  
+![Screenshot 3](Screenshot_3.png)  
+*Demonstrates a simulated Modbus fault during piston operation.*
+
+**Fault Result:**  
+![Result 2](Figure_3.png)  
+*Shows how the system reacts to the fault, including sensor and command status.*
