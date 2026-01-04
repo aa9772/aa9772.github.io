@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="0.4.8" editnum="3">
+<project version="0.4.8" editnum="6">
     <name>first</name>
     <author>ubuntu</author>
     <comment></comment>
     <ports>
         <port>
+            <baudRate>9600</baudRate>
+            <timeout>3000</timeout>
+            <timeoutInterByte>50</timeoutInterByte>
+            <dataBits>8</dataBits>
+            <type>TCP</type>
+            <name>Port</name>
             <parity>No</parity>
             <flowControl>No</flowControl>
-            <type>TCP</type>
-            <dataBits>8</dataBits>
             <port>5020</port>
-            <baudRate>9600</baudRate>
-            <stopBits>1</stopBits>
-            <timeoutInterByte>50</timeoutInterByte>
-            <name>Port</name>
             <serialPortName></serialPortName>
-            <timeout>3000</timeout>
-            <timeoutFirstByte>1000</timeoutFirstByte>
-            <host>localhost</host>
             <maxconn>10</maxconn>
+            <stopBits>1</stopBits>
+            <host>localhost</host>
+            <timeoutFirstByte>1000</timeoutFirstByte>
             <isBroadcastEnabled>true</isBroadcastEnabled>
         </port>
     </ports>
@@ -169,7 +169,7 @@
             </item>
             <item>
                 <device>Device</device>
-                <address>41</address>
+                <address>5</address>
                 <byteArrayFormat>DefaultDigitalFormat</byteArrayFormat>
                 <byteArraySeparator>\s</byteArraySeparator>
                 <byteOrder>DefaultOrder</byteOrder>
@@ -184,20 +184,20 @@
             </item>
             <item>
                 <device>Device</device>
-                <address>42</address>
+                <address>6</address>
                 <byteArrayFormat>DefaultDigitalFormat</byteArrayFormat>
                 <byteArraySeparator>\s</byteArraySeparator>
                 <byteOrder>DefaultOrder</byteOrder>
-                <comment>Piston B Fault Simulation</comment>
+                <comment>Piston B Faut Simulation</comment>
                 <format>Bool</format>
                 <period>1000</period>
                 <registerOrder>DefaultRegisterOrder</registerOrder>
                 <stringEncoding>DefaultStringEncoding</stringEncoding>
                 <stringLengthType>DefaultStringLengthType</stringLengthType>
-                <value>0</value>
+                <value>1</value>
                 <variableLength>20</variableLength>
             </item>
         </dataview>
     </dataviews>
-    <windows>0c0000006461743a6461746156696577020000000000000000000000f30300001c010000</windows>
+    <windows>0c0000006461743a64617461566965770200000000000000000000006605000004010000</windows>
 </project>

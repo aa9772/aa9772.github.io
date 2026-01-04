@@ -56,7 +56,7 @@
   "keywords": [
     "python", "piston simulator", "industrial automation", "plc", "modbus", "real-time visualization", "simulation", "engineering", "educational"
   ],
-  "wordCount" : "700",
+  "wordCount" : "706",
   "inLanguage": "en",
   "datePublished": "2026-01-03T04:35:41-05:00",
   "dateModified": "2026-01-03T04:35:41-05:00",
@@ -428,11 +428,15 @@ function toggleThemeListener() {
 <em>Diagram showing how the pistons are configured according to the Excel file.</em></p>
 <hr>
 <h3 id="modbus-master-setup">Modbus Master Setup<a hidden class="anchor" aria-hidden="true" href="#modbus-master-setup">¶</a></h3>
+<ul>
+<li>IP: localhost (or 127.0.0.1)</li>
+<li>Port: 5020</li>
+</ul>
 <p>We use <strong>ModbusTools</strong> as the Modbus Master:<br>
 <a href="https://github.com/serhmarch/ModbusTools/">ModbusTools</a><br>
 <em>This software simulates a Modbus client to control the pistons.</em></p>
 <p><strong>Client configuration file:</strong><br>
-<a href="2PistonsModubsMaster">Download Client Configuration</a><br>
+<a href="2PistonsModubsMaster.xml">Download Client Configuration</a><br>
 <em>Contains the mapping of Modbus addresses and commands for each piston.</em></p>
 <p><strong>Client GUI Screenshot:</strong><br>
 <img loading="lazy" src="/projects/piston-sim/Screenshot_1.png" type="" alt="Screenshot 1"  /><br>

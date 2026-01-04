@@ -178,12 +178,15 @@ You can see the Excel configuration file here:
 
 ### Modbus Master Setup
 
+- IP: localhost (or 127.0.0.1)
+- Port: 5020
+
 We use **ModbusTools** as the Modbus Master:  
 [ModbusTools](https://github.com/serhmarch/ModbusTools/)  
 *This software simulates a Modbus client to control the pistons.*
 
 **Client configuration file:**  
-[Download Client Configuration](2PistonsModubsMaster)  
+[Download Client Configuration](2PistonsModubsMaster.xml)  
 *Contains the mapping of Modbus addresses and commands for each piston.*
 
 **Client GUI Screenshot:**  
