@@ -1,12 +1,18 @@
 ---
 title: "ReMovAble"
 type: "collaborations"
-date: 2025-12-21T04:35:41-05:00
-tags: [ReMovAble, AMD, unibo, SMA]
+date: 2026-01-08
+tags: [ReMovAble, AssistiveTechnology, WearableDevices, SpinalCordInjury, Mechatronics, BiomedicalEngineering, HumanMachineInterface, SignalProcessing, MechanicalDesign, ProjectSupervision, Prototyping, MultidisciplinaryResearch]
 summary: "Overview of the ReMovAble Project, a multidisciplinary initiative developing an assistive glove for spinal cord injury patients, highlighting technical challenges and contributions by the project team."
-draft: true
+draft: false
 ---
 
+## Index
+
+- [The Project](#the-project)
+- [The Challenges](#the-challenges)
+- [Contribution](#contribution)
+- [Authorship, Contributions, and Acknowledgements](#authorship-contributions-and-acknowledgements)
 
 ## The Project
 
@@ -44,17 +50,17 @@ The **ReMovAble Project** is a multidisciplinary initiative focused on developin
 
 ### Authors and Individual Contributions
 
-- [**Gregorio Pisaeschi**](https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/)
+- [**Gregorio Pisaeschi**](https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/) : Adjunct professor, DEI "Guglielmo Marconi", University of Bologna
 
-  Affiliation (AMD (Advanced Materials and Design Lab), DEI "Guglielmo Marconi", University of Bologna)  
+  **Affiliation** : DIN (Department of Industrial Engineering), University of Bologna
 
-Contribution details to be provided by the author.
+  **Contribution** : Project supervision and mechanical design.
 
-- [**Carlo Gotti**](https://www.linkedin.com/in/carlo-gotti-225779184/)
+- [**Carlo Gotti**](https://www.linkedin.com/in/carlo-gotti-225779184/) : Adjunct professor, DEI "Guglielmo Marconi", University of Bologna
 
-  Affiliation (AMD (Advanced Materials and Design Lab), DEI "Guglielmo Marconi", University of Bologna)  
+  **Affiliation** : DIN (Department of Industrial Engineering), University of Bologna
 
-Contribution details to be provided by the author.
+  **Contribution** : Supervision of biomedical and mechatronic aspects.
 
 ### Research Environment and Laboratory Context
 
@@ -63,8 +69,12 @@ The project has been developed within the **Advanced Materials and Design Lab**,
 The interdisciplinary setting, combining expertise in **biomedical engineering, electronics, control systems, and human-centered design**, fosters a research-driven approach to assistive technology development.
 
 Further information about the laboratory and its ongoing research activities is available at:  
-[**AMD**](https://www.linkedin.com/in/amd-university-of-bologna-413948280/)
+
+<img src="amd_logo.jpeg" width="200" style="display:block; margin-left:0;">
+
+[**AMD (Advanced Material and Design Lab) University of Bologna**](https://www.linkedin.com/in/amd-university-of-bologna-413948280/)
+
 
 ---
 
-*Editorial Note:* The technical development and iterative refinement of the sensing–actuation interface described in the Contribution section was carried out by the site curator.
+*Editorial Note:* The technical development and iterative refinement of the sensing-actuation interface described in the Contribution section was carried out by the site curator.

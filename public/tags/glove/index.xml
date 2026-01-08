@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ReMovAble on Exploring Science and Engineering Solutions | Andrea Alessi</title>
-    <link>https://andreaalessi.com/tags/removable/</link>
-    <description>Recent content in ReMovAble on Exploring Science and Engineering Solutions | Andrea Alessi</description>
+    <title>Glove on Exploring Science and Engineering Solutions | Andrea Alessi</title>
+    <link>http://localhost:1313/tags/glove/</link>
+    <description>Recent content in Glove on Exploring Science and Engineering Solutions | Andrea Alessi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://andreaalessi.com/tags/removable/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jan 2026 04:35:41 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/glove/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ReMovAble</title>
-      <link>https://andreaalessi.com/collaborations/removable-1/</link>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/collaborations/removable-1/</link>
+      <pubDate>Thu, 08 Jan 2026 04:35:41 -0500</pubDate>
       
-      <guid>https://andreaalessi.com/collaborations/removable-1/</guid>
+      <guid>http://localhost:1313/collaborations/removable-1/</guid>
       <description>Overview of the ReMovAble Project, a multidisciplinary initiative developing an assistive glove for spinal cord injury patients, highlighting technical challenges and contributions by the project team.</description>
-      <content:encoded><![CDATA[<h2 id="index">Index</h2>
-<ul>
-<li><a href="#the-project">The Project</a></li>
-<li><a href="#the-challenges">The Challenges</a></li>
-<li><a href="#contribution">Contribution</a></li>
-<li><a href="#authorship-contributions-and-acknowledgements">Authorship, Contributions, and Acknowledgements</a></li>
-</ul>
-<h2 id="the-project">The Project</h2>
+      <content:encoded><![CDATA[<h2 id="the-project">The Project</h2>
 <p>In partnership with Montecatone Clinic, the <strong>ReMovAble Project</strong> aims to support people with spinal cord injuries. We are developing an innovative glove designed to restore hand mobility and improve the everyday lives of quadriplegic patients.</p>
 <p>More than just a technological innovation, this project is about people. A passionate team of students and researchers drives ReMovAble, motivated by volunteerism and collaboration. Their dedication shows how engineering can change lives and the real impact that collective research can have on society.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -54,22 +47,23 @@
 <li>
 <p><a href="https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/"><strong>Gregorio Pisaeschi</strong></a> : Adjunct professor, DEI &ldquo;Guglielmo Marconi&rdquo;, University of Bologna</p>
 <p><strong>Affiliation</strong> : DIN (Department of Industrial Engineering), University of Bologna</p>
-<p><strong>Contribution</strong> : Project supervision and mechanical design.</p>
 </li>
+</ul>
+<p>Contribution details to be provided by the author.</p>
+<ul>
 <li>
 <p><a href="https://www.linkedin.com/in/carlo-gotti-225779184/"><strong>Carlo Gotti</strong></a> : Adjunct professor, DEI &ldquo;Guglielmo Marconi&rdquo;, University of Bologna</p>
 <p><strong>Affiliation</strong> : DIN (Department of Industrial Engineering), University of Bologna</p>
-<p><strong>Contribution</strong> : Supervision of biomedical and mechatronic aspects.</p>
 </li>
 </ul>
+<p>Contribution details to be provided by the author.</p>
 <h3 id="research-environment-and-laboratory-context">Research Environment and Laboratory Context</h3>
 <p>The project has been developed within the <strong>Advanced Materials and Design Lab</strong>, part of the <strong>University of Bologna</strong>. The laboratory provided the scientific environment, technical resources, and research guidance necessary for the development of the prototype and associated experimental activities.</p>
 <p>The interdisciplinary setting, combining expertise in <strong>biomedical engineering, electronics, control systems, and human-centered design</strong>, fosters a research-driven approach to assistive technology development.</p>
-<p>Further information about the laboratory and its ongoing research activities is available at:</p>
-<img src="amd_logo.jpeg" width="200" style="display:block; margin-left:0;">
-<p><a href="https://www.linkedin.com/in/amd-university-of-bologna-413948280/"><strong>AMD (Advanced Material and Design Lab) University of Bologna</strong></a></p>
+<p>Further information about the laboratory and its ongoing research activities is available at:<br>
+<a href="https://www.linkedin.com/in/amd-university-of-bologna-413948280/"><strong>AMD (Advanced Material and Design Lab) University of Bologna</strong></a></p>
 <hr>
-<p><em>Editorial Note:</em> The technical development and iterative refinement of the sensing-actuation interface described in the Contribution section was carried out by the site curator.</p>
+<p><em>Editorial Note:</em> The technical development and iterative refinement of the sensing–actuation interface described in the Contribution section was carried out by the site curator.</p>
 ]]></content:encoded>
     </item>
     
