@@ -50,7 +50,7 @@ The **ReMovAble Project** is a multidisciplinary initiative focused on developin
 
 ### Authors and Individual Contributions
 
-- [**Gregorio Pisaeschi**](https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/) : Adjunct professor, DEI "Guglielmo Marconi", University of Bologna
+- [**Gregorio Pisaneschi**](https://www.linkedin.com/in/gregorio-pisaneschi-7975b880/) : Adjunct professor, DEI "Guglielmo Marconi", University of Bologna
 
   **Affiliation** : DIN (Department of Industrial Engineering), University of Bologna
 
