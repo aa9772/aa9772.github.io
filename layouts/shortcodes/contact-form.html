@@ -75,7 +75,7 @@
 </head>
 <body>
 
-  <form
+  <form id="contact-form"
     class="contact-form"
     action="https://formspree.io/f/xdkqbwkq"
     method="POST"
@@ -86,8 +86,40 @@
     <label for="message">Your message</label>
     <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-    <button type="submit">Send message</button>
+    <label for="terms-chbx">I've read the <a href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and accept the <a id="terms" href="#">Terms and Conditions</a></label>
+    <input type="checkbox" id="terms-chbx" name="generic" onchange="document.getElementById('contact-submit').disabled = !this.checked;" />
+
+    <button id="contact-submit" type="submit">Send message</button>
   </form>
+
+  <script type="text/javascript">
+    _iub.cons_instructions.push(["load", {
+        submitElement: document.getElementById("contact-submit"),
+        form: {
+            selector: document.getElementById("contact-form"),
+            map: {
+                subject: {
+                    email: "email"
+                },
+                preferences: {
+                    generic: "generic",
+                }
+            }
+        },
+        consent: {
+            legal_notices: [{
+                    identifier: "privacy_policy",
+                },
+                {
+                    identifier: 'cookie_policy',
+                },
+                {
+                    identifier: "terms",
+                }
+            ],
+        }
+    }])
+  </script>
 
 </body>
 </html>
