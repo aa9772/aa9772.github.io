@@ -71,6 +71,19 @@
     .contact-form button:active {
       transform: scale(0.98);
     }
+
+    button:disabled {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      cursor: not-allowed;
+    }
+
+    button:disabled:hover {
+      background-color: #cccccc;
+      color: #666666;
+  }
+
   </style>
 </head>
 <body>
@@ -86,10 +99,10 @@
     <label for="message">Your message</label>
     <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-    <label for="terms-chbx">I've read the <a href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and accept the <a id="terms" href="#">Terms and Conditions</a></label>
+    <label for="terms-chbx">I've read the <a target=_blank href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and accept the <a target=_blank id="terms" href="#">Terms and Conditions</a></label>
     <input type="checkbox" id="terms-chbx" name="generic" onchange="document.getElementById('contact-submit').disabled = !this.checked;" />
 
-    <button id="contact-submit" type="submit">Send message</button>
+    <button id="contact-submit" disabled type="submit">Send message</button>
   </form>
 
   <script type="text/javascript">
