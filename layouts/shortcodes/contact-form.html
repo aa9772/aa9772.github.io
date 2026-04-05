@@ -84,6 +84,11 @@
       color: #666666;
   }
 
+    .contact-form .checkbox-row label {
+    display: inline;
+    font-weight: normal;
+  }
+
   </style>
 </head>
 <body>
@@ -99,8 +104,10 @@
     <label for="message">Your message</label>
     <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-    <label for="terms-chbx">I've read the <a target=_blank href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and accept the <a target=_blank id="terms" href="#">Terms and Conditions</a></label>
-    <input type="checkbox" id="terms-chbx" name="generic" onchange="document.getElementById('contact-submit').disabled = !this.checked;" />
+    <div class="checkbox-row" style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+      <input type="checkbox" id="terms-chbx" name="generic" onchange="handleCheckbox(this)" style="width: 40px; height: 40px; margin-bottom: 0; flex-shrink: 0;" />
+      <label for="terms-chbx">I've read the <a target="_blank" href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and consent to the processing of my personal data.</label>
+    </div>
 
     <button id="contact-submit" disabled type="submit">Send message</button>
   </form>
@@ -132,6 +139,12 @@
             ],
         }
     }])
+
+    function handleCheckbox(checkbox) {
+      var btn = document.getElementById('contact-submit');
+      btn.disabled = !checkbox.checked;
+      btn.title = checkbox.checked ? '' : 'Please accept the Privacy Policy to send the message';
+    }
   </script>
 
 </body>

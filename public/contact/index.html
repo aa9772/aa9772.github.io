@@ -33,7 +33,9 @@ Send a Message
     Your message
     
 
-    I&#39;ve read the Privacy Policy and accept the Terms and Conditions
+    
+      
+      I&#39;ve read the Privacy Policy and consent to the processing of my personal data.
     
 
     Send message
@@ -73,12 +75,11 @@ Send a Message
     }
   ]
 }
-</script>
-<script type="text/javascript" src="https://embeds.iubenda.com/widgets/1b96d37b-4faa-4906-afaa-f47e2d81c991.js"></script>
+</script><script type="text/javascript" src="https://embeds.iubenda.com/widgets/1b96d37b-4faa-4906-afaa-f47e2d81c991.js"></script>
 <script type="text/javascript">
-var _iub = _iub || {}; 
-_iub.cons_instructions = _iub.cons_instructions || []; 
-_iub.cons_instructions.push(["init", {api_key: "CCqJWpXGifykYzv8MBIwZmxumghV7F0f"}]);
+    var _iub = _iub || {}; 
+    _iub.cons_instructions = _iub.cons_instructions || []; 
+    _iub.cons_instructions.push(["init", {api_key: "CCqJWpXGifykYzv8MBIwZmxumghV7F0f"}]);
 </script>
 <script type="text/javascript" src="https://cdn.iubenda.com/cons/iubenda_cons.js" async></script>
 <noscript>
@@ -359,6 +360,11 @@ function toggleThemeListener() {
       color: #666666;
   }
 
+    .contact-form .checkbox-row label {
+    display: inline;
+    font-weight: normal;
+  }
+
   </style>
 </head>
 <body>
@@ -374,8 +380,10 @@ function toggleThemeListener() {
     <label for="message">Your message</label>
     <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-    <label for="terms-chbx">I've read the <a target=_blank href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and accept the <a target=_blank id="terms" href="#">Terms and Conditions</a></label>
-    <input type="checkbox" id="terms-chbx" name="generic" onchange="document.getElementById('contact-submit').disabled = !this.checked;" />
+    <div class="checkbox-row" style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+      <input type="checkbox" id="terms-chbx" name="generic" onchange="handleCheckbox(this)" style="width: 40px; height: 40px; margin-bottom: 0; flex-shrink: 0;" />
+      <label for="terms-chbx">I've read the <a target="_blank" href="https://www.iubenda.com/privacy-policy/62336353">Privacy Policy</a> and consent to the processing of my personal data.</label>
+    </div>
 
     <button id="contact-submit" disabled type="submit">Send message</button>
   </form>
@@ -407,6 +415,12 @@ function toggleThemeListener() {
             ],
         }
     }])
+
+    function handleCheckbox(checkbox) {
+      var btn = document.getElementById('contact-submit');
+      btn.disabled = !checkbox.checked;
+      btn.title = checkbox.checked ? '' : 'Please accept the Privacy Policy to send the message';
+    }
   </script>
 
 </body>
