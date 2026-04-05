@@ -5,6 +5,7 @@ theme = "PaperModX"
 
 
 [params]
+  env = "production"
   author = "Andrea Alessi"
   showReadingTime = true
   showCodeCopyButtons = true
